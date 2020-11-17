@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Home Register</title>
+	<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+<style>
+
+
+.thead {
+	background: linear-gradient(to right, orange, #ec38bc, #7303c0, cyan); 
+	color: white;
+	
+}
+
+hr {
+	height: 20px;
+    border: 0;
+    border-radius: 20px;
+    background: linear-gradient(to right, orange, #ec38bc, #7303c0, cyan); 
+    
+}
+
+td {
+	padding-left: 50px;
+}
+
+td input[type = "number"], td input[type = "text"] {
+	display: block;
+	width: 500px;
+	border-radius: 20px;
+	border-color: deeppink;
+	border-width: 4px;
+	text-align: center;
+}
+
+select {
+	display: block;
+	width: 260px;
+	border-radius: 20px;
+	border-color: deeppink;
+	border-width: 4px;
+}
+
+table {
+	font-family: 'Courgette', sans-serif;
+}
+
+button {
+	float: center;
+	width: 20%;
+	height: 40px;
+	border-radius: 10px;
+	background: linear-gradient(to right, orange, #ec38bc, #7303c0, cyan); 
+	color: white;
+	cursor: pointer;
+	font-family: 'Courgette', sans-serif;
+}
+
+
+</style>
+</head>
+
+<body style="background-image: url(kodomo.jpg);color: black;background-repeat: no-repeat">
+
+		<table style="margin-top: 5%" cellspacing="0" cellpadding=" 5" border="0" align="center" width="1000px">	
+			<tr>
+					<td colspan="2"><center><h1 style="color: deeppink">Booking Hotel Flores</h1></center></td>
+			</tr>
+			<tr>	
+				<td>Nama</td>
+				<td colspan="2">
+					<form>
+							<input type="text" id="nama" placeholder="Masukan Nama" style="width: 500px">
+			 		</form>
+				</td>
+			</tr>
+			<tr>	
+				<td>Umur</td>
+				<td colspan="2">
+					<form>
+							<input type="number" id="umur" placeholder="Masukan Umur" style="width: 500px">
+			 		</form>
+				</td>
+			</tr>
+			<tr>	
+				<td>No Handphone</td>
+				<td colspan="2">
+					<form>
+							<input type="number" id="nomor" placeholder="No Handphone" style="width: 500px">
+			 		</form>
+				</td>
+			</tr>
+			<tr>	
+				<td>Jenis kelamin</td>
+				<td colspan="2">
+					<form>
+						<select id="jk">
+							<option value="Laki-Laki">Laki-Laki</option>
+							<option value="Perempuan">Perempuan</option>
+						</select>
+			 		</form>
+				</td>
+			</tr>
+			<tr>	
+				<td>Bintang hotel</td>
+				<td colspan="2">
+					<form>
+						<select id="bintang">
+							<option value="250000">Bintang 1</option>
+							<option value="450000">Bintang 2</option>
+							<option value="600000">Bintang 3</option>
+							<option value="750000">Bintang 4</option>
+							<option value="1000000">Bintang 5</option>
+						</select>
+			 		</form>
+				</td>
+			</tr>
+			<tr>	
+				<td>Check in</td>
+				<td colspan="2">
+					<form>
+						<input type="number" id="checkin" style="width: 250px" placeholder="Tanggal">
+			 		</form>
+				</td>
+			</tr>
+			<tr>	
+				<td>Check out</td>
+				<td colspan="2">
+					<form>
+						<input type="number" id="checkout" style="width: 250px" placeholder="Tanggal">
+			 		</form>
+				</td>
+			</tr>
+			<tr>	
+				<td>Jumlah kamar</td>
+				<td colspan="2">
+					<form>
+							<input type="number" id="kamar" style="width: 500px">
+			 		</form>
+				</td>
+			</tr>
+
+				<tr>
+					<td colspan="2" height="60px"></td>
+				</tr>
+			
+				<tr>
+					<td colspan="2" align="center"><button onclick="thasil()">Rincian Harga</button></td>
+				</tr>
+
+		</table>
+
+		<br><br><br>
+
+		<hr class="line">
+
+		<br><br>
+
+		<center>
+		<table cellpadding="5" >
+			<thead class="thead" >
+
+			<tr>
+				<th id="head" colspan="2"></th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td id="1a"></td>
+				<td id="1b"></td>
+			</tr>
+			<tr>
+				<td id="2a"></td>
+				<td id="2b"></td>
+			</tr>
+			<tr>
+				<td id="3a"></td>
+				<td id="3b"></td>
+			</tr>
+			<tr>
+				<td id="4a"></td>
+				<td id="4b"></td>
+			</tr>
+			<tr>
+				<td id="5a"></td>
+				<td id="5b"></td>
+			</tr>
+			<tr>
+				<td id="6a"></td>
+				<td id="6b"></td>
+			</tr>
+			<tr>
+				<td id="7a"></td>
+				<td id="7b"></td>
+			</tr>
+			<tr>
+				<td id="8a"></td>
+				<td id="8b"></td>
+			</tr>
+			<tr>
+				<td id="9a"></td>
+				<td id="9b"></td>
+			</tr>
+			<tr>
+				<td id="10a"></td>
+				<td id="10b"></td>
+			</tr>
+			</tbody>
+		</table>
+		<br>
+		<a href="home1.html" style="text-decoration: none; color: white"><button style="width: 10%">Home</button></a>
+		<button onclick="pesan()" style="width: 10%">Pesan Lagi</button>
+		</center>
+
+	<script>
+		function hasil() {
+			nama = document.getElementById("nama").value;
+			umur = document.getElementById("umur").value;
+			nomor = document.getElementById("nomor").value;
+			gender = document.getElementById("jk").value;
+            cin = document.getElementById("checkin").value;
+            cot = document.getElementById("checkout").value;
+            bintang = document.getElementById("bintang").value;
+            kamar = document.getElementById("kamar").value;
+            hari = cot - cin;
+			a = "Rp. ";
+			head = document.getElementById("head").innerHTML = "Rincian";
+			document.getElementById("1a").innerHTML = "Nama";
+			document.getElementById("1b").innerHTML = nama;
+			document.getElementById("2a").innerHTML = "Umur";
+			document.getElementById("2b").innerHTML = umur + " Tahun";
+			document.getElementById("3a").innerHTML = "No. Handphone";
+			document.getElementById("3b").innerHTML = nomor;
+			document.getElementById("4a").innerHTML = "Jenis Kelamin";
+			document.getElementById("4b").innerHTML = gender;
+			document.getElementById("5a").innerHTML = "Harga Hotel";
+			document.getElementById("5b").innerHTML = bintang;
+			document.getElementById("6a").innerHTML = "Tanggal Check-in";
+			document.getElementById("6b").innerHTML = cin;
+			document.getElementById("7a").innerHTML = "Tanggal Check-out";
+			document.getElementById("7b").innerHTML = cot;
+			document.getElementById("8a").innerHTML = "Jumlah Kamar";
+			document.getElementById("8b").innerHTML = kamar;
+			document.getElementById("9a").innerHTML = "Total Harga";
+            document.getElementById("9b").innerHTML = a + (bintang * kamar * hari);
+			document.getElementById("10a").innerHTML = "Kota Pilihan";
+			document.getElementById("10b").innerHTML = "Flores";
+        }
+		var data = nama,umur,nomor,cin,cot,kamar;
+		function thasil() {
+			hasil();
+		}
+		function pesan() {
+			var pesan = confirm("Yakin pesan kembali?");
+			if (pesan) {
+				while (pesan <= 1) {
+					window.location.reload();
+					pesan++;
+				}
+			}
+		}
+	</script>
+</body>
+</html>
